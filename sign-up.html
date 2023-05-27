@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="main.css" />
+
+    <style>
+      body {
+        background-image: url("2nd-white-room.jpg.webp");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      border {
+        color: rgb(101, 126, 77);
+      }
+      table {
+        margin-left: 66px;
+        border-collapse: collapse;
+      }
+      td {
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 style="font-size: 100px" id="sing-up-plantore">
+        <em> Plantore. </em>
+      </h1>
+    </header>
+    <form
+      action="sign-up.php"
+      method="post"
+      name="singUpForm"
+      onsubmit="return valid_sign_up()"
+    >
+      <!---->
+      <table class="login-sign-table">
+        <tr>
+          <td>
+            <input
+              type="email"
+              placeholder="e-mail"
+              style="background-color: transparent"
+              class="sign-up-color"
+              name="email"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="password"
+              placeholder="password"
+              style="background-color: transparent"
+              class="sign-up-color"
+              name="password"
+            />
+          </td>
+          <td>
+            <input
+              type="password"
+              placeholder="repeat password"
+              style="background-color: transparent"
+              class="sign-up-color"
+              name="password2"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="text"
+              placeholder="name"
+              style="background-color: transparent"
+              class="sign-up-color"
+              name="name"
+            />
+          </td>
+          <td>
+            <input
+              type="text"
+              placeholder="surname"
+              style="background-color: transparent"
+              class="sign-up-color"
+              name="surname"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              onsubmit="return valid_sign_up()"
+              id="create-account-button"
+              type="submit"
+            />
+            <!--Create account-->
+          </td>
+        </tr>
+      </table>
+    </form>
+    <script>
+      function valid_sign_up() {
+        var mail = document.singUpForm.email.value;
+        var password = document.singUpForm.password.value;
+        var password2 = document.singUpForm.password2.value;
+        var surname = document.singUpForm.surname.value;
+        var name = document.singUpForm.name.value;
+        console.log(password, "   ", password2);
+        if (mail == "" && password == "") {
+          alert("re-enter your password and email.");
+          return false;
+        }
+        if (mail == "") {
+          alert("re-enter your email");
+          return false;
+        }
+        if (name == "") {
+          alert("re-enter name");
+          return false;
+        }
+       
+        if (password != password2) {
+          alert("passwords not matching.");
+          return false;
+        }
+        if (mail == "") {
+          alert("re-enter e-mail.");
+          return false;
+        }
+        if (surname == "") {
+          alert("re-enter surname.");
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>
