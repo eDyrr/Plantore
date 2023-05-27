@@ -1,0 +1,228 @@
+h1
+{
+    color : white ; 
+    margin-top : 0px; 
+    margin-bottom: 0px;
+    margin-right: 0px;
+    position: absolute;
+    left: 50px;
+    top: 0px ;
+}
+.closebtn
+{
+    position:absolute; 
+    left : 260px ;
+    margin-top : 0px ;
+}
+.sidenav
+{
+    top: 0px ;
+    background-color: white;
+}
+@font-face {
+    font-family: 'DancingScript-VariableFont_wght';
+    src: url('Dancing_Script/DancingScript-VariableFont_wght.ttf') format('truetype') ;
+    font-weight: normal ; 
+    font-style : normal ;
+}
+body
+{
+    font-family: 'DancingScript-VariableFont_wght', serif ;
+}
+.login-button
+{
+    display: inline-block;
+  position: absolute;
+  font-family: 'DancingScript-VariableFont_wght', serif;
+  top: 20px ;
+  right: 10px ;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.login-button:hover ,a:hover
+{
+    background-color: black;
+    color: white ;
+}
+a
+{
+    text-decoration: none;
+    color : black ; 
+    /*padding: 0px;
+    margin: 0px;*/
+}
+hr
+{
+    height: 3px;
+    border: none;
+    background-color: white;
+}
+#login-plantore
+{
+    color : black;
+}
+.login-input
+{
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 1px solid black;
+}
+input::placeholder
+{
+    font-family: 'DancingScript-VariableFont_wght', serif;
+    font-size: 14px;
+    color: black;
+}
+.sign-up-button
+{
+  font-family: 'DancingScript-VariableFont_wght', serif;
+  font-size: 1.2rem;
+  padding: 10px 42px;
+  background-color: transparent ;
+  color: black;
+  border: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: none;
+}
+.sign-up-button:hover ,a:hover
+{
+    background-color: transparent;
+    color: white ;
+}
+.login_button
+{
+  font-family: 'DancingScript-VariableFont_wght', serif;
+  font-size: 1.2rem;
+  padding: 10px 51px;
+  background-color: transparent;
+  color: black;
+  border: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.login_button:hover
+{
+    color:white ;
+    background-color: transparent;
+}
+#sing-up-plantore
+{
+    /*color: rgb(213, 156, 109) ;*/
+    color : black ; 
+}
+.sign-up-color::placeholder
+{
+    /*color : rgb(213, 156, 109);*/
+    color : black ;
+}
+.sign-up-color
+{
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    /*border-bottom : 2px solid rgb(213, 156, 109); */
+    border-bottom: 2px solid black;
+}
+#create-account-button
+{
+    font-family: 'DancingScript-VariableFont_wght', serif;
+  font-size: 1.2rem;
+  padding: 10px 42px;
+  background-color: transparent ;
+  /*color: rgb(213, 156, 109) ;*/
+  color : black ;
+  border: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: none;
+}
+#create-account-button:hover
+{
+    color : black ; 
+}
+span
+{
+    color :white;
+}
+.login-sign-table
+{
+    margin-top: 120px;
+    margin-left: 100px;
+}
+.sidenav
+{
+  height: 100%;
+width: 0;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-color: white;
+overflow-x: hidden;
+transition: 0.5s;
+padding-top: 60px;
+}
+
+.sidenav a {
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size: 25px;
+color: black;
+display: block;
+transition: 0.3s;
+}
+
+.sidenav a:hover {
+color: rgb(163,214,84);
+}
+
+.sidenav .closebtn {
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+
+summary::-webkit-details-marker 
+{
+    display: none;
+}
+summary::marker 
+{
+    display: none;
+}  
+#expandable-summary
+{
+    margin-left: 30px ;
+}
+li
+{
+    font-size: 20px;
+    margin-left:0px;
+}
+#Store:hover
+{
+    color : rgb(163,214,84);
+}
